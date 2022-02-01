@@ -1,0 +1,166 @@
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(fonts/OpenSans-Bold.ttf);
+  }
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(fonts/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/OpenSans-Medium.ttf);
+}
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSans-SemiBold;
+    src: url(fonts/OpenSans-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: OpenSans-LightItalic;
+    src: url(fonts/OpenSans-LightItalic.ttf);
+  }
+.course-catalog-wrapper {
+    overflow: hidden;
+}
+.course-catalog-wrapper img{
+   height: 100%;
+   width: 100%;
+
+}
+.course-catalog-wrapper .top-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F8F8F8;
+}
+.course-catalog-wrapper .register-btn button {
+    padding: 6px 45px;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.course-catalog-wrapper .top-text p {
+    text-align: center;
+    font-family: OpenSans-Light;
+}
+.top-text h3 span {
+    color: #2B79BD;
+}
+.arrow-spot {
+    color: #CB1717;
+
+}
+.middle-text h5 {
+    font-family: OpenSans-Bold;
+}
+.middle-text p {
+    font-family: OpenSans-Light;
+}
+.middle-text .arrow-spot span {
+    font-family: OpenSans-SemiBold;
+}
+/* ======= card styling start here =========== */
+.card {
+    border: none !important;
+}
+.card-titile-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.card-titile-wrapper .card-tittle {
+    display: flex;
+    flex-direction: row;
+}
+.card-titile-wrapper p {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #8A8A8A;
+}
+.media {
+    display: flex;
+    flex-direction: row;
+}
+.media img {
+    border: 2px solid #8A8A8A;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.media-body span {
+    color: #8A8A8A;
+}
+.media p {
+    line-height: 18px;
+    font-family: OpenSans-Regular;
+}
+.user-rating {
+    float: left;
+    width: 70%;
+}
+.user-rating span {
+    color: #2B79BD;
+    font-family: OpenSans-Regular;
+}
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 8px; background-color: #2B79BD;}
+
+/* card styling end here  */
+/* accordion styling start here  */
+.accordion-item {
+    border: none;
+}
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.accordion-button:focus {
+    border-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.accordion-item button {
+    font-family: OpenSans-SemiBold;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(images/accordion.png);
+}
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(images/postive.png);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+/* media querry  */
+@media only screen and (max-width: 600px)  {
+    
+.course-catalog-wrapper .top-text .small-text {
+    font-family: OpenSans-Light;
+    font-size: 12px;
+}
+.course-catalog-wrapper .top-text {
+    top: 13%;
+     left: 0%; 
+    transform: translate(-0%, -0%);
+}
+.course-catalog-wrapper .upper-div img {
+    height: 300px;
+}
+}
